@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title | default("Vida Saludable y Sencilla") }}</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
 </head>
 <body>
   <header>
@@ -14,8 +14,8 @@
     <!-- Navegación principal -->
     <nav class="navbar">
       <ul>
-        <li><a href="/" title="Ir al inicio">Inicio</a></li>
-        <li><a href="/actividad/" title="Página de la actividad">Actividad</a></li>
+        <li><a href="{{ '/' | url }}" title="Ir al inicio">Inicio</a></li>
+        <li><a href="{{ '/actividad/' | url }}" title="Página de la actividad">Actividad</a></li>
         <li><a href="#" title="Enlace vacío" onclick="alert('Este es un enlace vacío con evento JavaScript'); return false;">Enlace Vacío</a></li>
       </ul>
     </nav>
