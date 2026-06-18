@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title | default("Vida Saludable y Sencilla") }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Vida Saludable y Sencilla</h1>
+    <p>Cómo estar sano sin ser un loco del gimnasio</p>
+    <!-- Navegación principal -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="/" title="Ir al inicio">Inicio</a></li>
+        <li><a href="/actividad.html" title="Página de la actividad">Actividad</a></li>
+        <li><a href="#" title="Enlace vacío" onclick="alert('Este es un enlace vacío con evento JavaScript'); return false;">Enlace Vacío</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer>
+    <p>David Uriel Espinosa velazquez - UNIR</p>
+  </footer>
+</body>
+</html>

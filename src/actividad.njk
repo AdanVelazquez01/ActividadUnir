@@ -1,0 +1,114 @@
+---
+layout: base.njk
+title: Actividad - Criterios
+---
+
+<div class="post-content">
+  <h2>Criterios de la Actividad</h2>
+  <p>Esta página contiene todos los elementos requeridos para la actividad de UNIR.</p>
+
+  <!-- 1. Tabla con atributos -->
+  <section class="activity-section">
+    <h3>Tabla de Hábitos Saludables</h3>
+    <table border="1" cellpadding="10" cellspacing="0" class="styled-table">
+      <thead>
+        <tr>
+          <th>Hábito</th>
+          <th>Frecuencia Mínima</th>
+          <th>Beneficio Principal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Caminar</td>
+          <td>30 min / día</td>
+          <td>Salud cardiovascular</td>
+        </tr>
+        <tr>
+          <td>Beber agua</td>
+          <td>2 litros / día</td>
+          <td>Hidratación adecuada</td>
+        </tr>
+        <tr>
+          <td>Dormir bien</td>
+          <td>7-8 horas / noche</td>
+          <td>Recuperación mental y física</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 2. Elemento externo incrustado (iframe) -->
+  <section class="activity-section">
+    <h3>Elemento Externo Incrustado</h3>
+    <p>Video sobre vida saludable:</p>
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/5a2qH41280U" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- 3. Formulario con atributos -->
+  <section class="activity-section">
+    <h3>Formulario de Contacto</h3>
+    <!-- El formulario incluye atributos como action, method, autocomplete -->
+    <form action="#" method="get" autocomplete="off" class="styled-form">
+      <div class="form-group">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required maxlength="50">
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="juan@ejemplo.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="comentario">Comentario o sugerencia:</label>
+        <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escribe aquí tu mensaje..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <input type="checkbox" name="suscripcion" value="yes" checked>
+          Suscribirme al boletín semanal
+        </label>
+      </div>
+
+      <button type="submit" onclick="alert('Formulario enviado correctamente!'); return false;">Enviar</button>
+    </form>
+  </section>
+
+  <!-- 4. Elemento multimedia con atributos -->
+  <section class="activity-section">
+    <h3>Elemento Multimedia</h3>
+    <!-- Imagen con atributos src, alt, width y loading -->
+    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+         alt="Comida saludable" 
+         width="100%" 
+         style="max-width: 600px; border-radius: 8px;"
+         loading="lazy">
+  </section>
+
+  <!-- 5. Combinación de elementos -->
+  <section class="activity-section">
+    <h3>Combinación de Elementos</h3>
+    <div style="background-color: #f0fdf4; padding: 20px; border-radius: 8px; border: 1px solid #4CAF50;">
+      <p>A continuación se presenta un formulario rápido junto con una pequeña imagen descriptiva:</p>
+      <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Entrenamiento" width="150" style="border-radius: 8px;">
+        <form onsubmit="event.preventDefault(); alert('¡Gracias por unirte al reto!');">
+          <label for="reto">Únete al reto de 30 días:</label>
+          <input type="email" id="reto" name="reto" placeholder="Tu correo" required>
+          <button type="submit">¡Me apunto!</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</div>

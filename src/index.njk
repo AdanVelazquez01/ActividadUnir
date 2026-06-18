@@ -1,0 +1,19 @@
+---
+layout: base.njk
+title: Inicio - Vida Saludable y Sencilla
+---
+
+<section class="posts-grid">
+  {%- for post in collections.post | reverse -%}
+    <article class="card">
+      {% if post.data.image %}
+        <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
+      {% endif %}
+      <div class="card-content">
+        <h2>{{ post.data.title }}</h2>
+        <p>{{ post.data.description }}</p>
+        <a href="{{ post.fileSlug }}.html">Leer más</a>
+      </div>
+    </article>
+  {%- endfor -%}
+</section>
